@@ -1,14 +1,15 @@
-import ItemMeta from "./ItemMeta";
-import CommentContainer from "./CommentContainer";
-import React from "react";
-import agent from "../../agent";
-import { connect } from "react-redux";
-import marked from "marked";
 import {
   ITEM_PAGE_LOADED,
   ITEM_PAGE_UNLOADED,
 } from "../../constants/actionTypes";
+
+import CommentContainer from "./CommentContainer";
+import ItemMeta from "./ItemMeta";
+import React from "react";
+import agent from "../../agent";
+import { connect } from "react-redux";
 import imagePlaceHolder from '../../imgs/placeholder.png'
+import marked from "marked";
 
 const mapStateToProps = (state) => ({
   ...state.item,
